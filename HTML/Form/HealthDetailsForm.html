@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Health Detail Form</h1>
+    <form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="Fname">Full Name : </label>
+        <input type="text" name="Fname" id="Fname">
+        <br>
+        <br>
+        <label for="DOB" >Date Of Birth :</label>
+        <input type="date" name="DOB" id="DOB">
+        <br><br>
+        <label>Gender :</label>
+        <input type="Radio" name="Gender" value="Male"> 
+        <label>Male</label>
+        <input type="Radio" name="Gender" value="Female"> 
+        <label>Female</label>
+        <input type="Radio" name="Gender" value="Other"> 
+        <label>Others</label>
+        <br><br>
+        <label for="Number">Phone Number</label>
+        <input type="number" id="Number" name="Number">
+        <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Medical History</legend>
+        <label for="Blood_Group">Blood Group :</label>
+        <select name="Blood_Group" id="Blood_Group">
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="O+">O+</option>
+            <option value="AB+">AB+</option>
+        </select>
+        <br>
+        <br>
+        <label for="eye">Do you wear glasses or contact lenses ?</label>
+        <br>
+        <input type="radio" value="yes" id="eye"  name="eye">
+        <label>Yes</label>
+        <input type="radio" value="no" id="eye" name="eye">
+        <label>No</label>
+        <br><br>
+        <label for="cond">Pre-existing Conditions :</label>
+        <br>
+        <textarea name="pre_existing Conditions" id="cond" placeholder="List any Pre-existing Medical Condition" rows="5" cols="100%"></textarea>
+        <br><br>
+        <label for="">Alergies :</label>
+        <br>
+        <input type="radio">  Pollen 
+        <br> 
+        <input type="radio">  Peanut
+        <br> 
+        <input type="radio">  Latex 
+        <br> 
+        <input type="radio">  None 
+        <br><br>
+        <label for="curr">Current Medication :</label>
+        <br>
+        <textarea name="Current_Medication" id="curr" placeholder="List any Current Medication" rows="5" cols="100%"></textarea>
+        <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Emergency Control</legend>
+        <label for="cname">Emergency Contact Name  : </label>
+        <input type="text" id="cname">
+        <br><br>
+        <label for="cphone">Emergency Contact Phone  : </label>
+        <input type="Number" id="cphone">
+        <br>
+        <br>
+        <label for="relation">Relationship To Emergency Contact : </label>
+        <input type="text" id="relation">
+        <br>
+        <br><br>
+    </fieldset>
+
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
