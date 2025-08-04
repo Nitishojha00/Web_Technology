@@ -1,0 +1,39 @@
+ header {
+   background-color: rgb(63, 233, 63);
+ }
+
+ header h1 {
+    color: white;
+    font-size: 3vw;
+    font-family: "Port Lligat Slab", serif;
+
+ }
+
+ header p {
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+ }
+
+ /* main */
+
+ main > h2{
+   color: rgb(231, 51, 162);
+ }
+
+ main > h1 {
+    color: red;
+ }
+
+ main > table {
+    width: 100%;
+ }
+
+ table th{
+    background-color: rgb(24, 150, 227);
+ }
+
+ /* footer */
+ footer {
+    background-color: rgb(223, 223, 223);
+ }

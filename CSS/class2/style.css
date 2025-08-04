@@ -1,0 +1,69 @@
+
+ body{
+    font-family: 'Verdana', 'sans-serif';
+    color: #333;
+    background-color :'#f0f0f0'
+ }
+
+header{
+    background-color: #4CAF50;
+    color : 'white';
+}
+
+header h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header h2{
+    font-size: 1.5em;
+    color: #FFD700;
+}
+
+
+
+article{
+    background-color: white;
+}
+
+.second h3{
+   color: red;
+   font-weight: bold;
+   font-size: 2em;
+   letter-spacing: -1px;
+}
+
+.second h4 {
+    color: #FF69B4;
+    font-size: 1.5em;
+}
+
+table{
+    background-color: #f9f9f9;
+    width: 100%;
+}
+th{
+    background-color: #007BFF;
+    color: white;
+}
+
+footer{
+    color: #333;
+    background-color: #ccc;
+}
+/* 
+
+
+ 
+ 5. List Styles:
+ ○ For h4 tags:
+ ■ Set color to #FF69B4
+ ■ Set font-size to 1.5em
+ 6. Table Styles:
+○ For the table element, set background-color to
+ #f9f9f9.
+ ○ Style the th elements with background-color of
+ #007BFF and color as white.
+ 7. Footer Styles:
+ ○ For the footer, set color to #333 and
+ background-color to #ccc */
