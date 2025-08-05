@@ -1,0 +1,32 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    position: fixed; /*scroll bar htjarha fixed krna pe */
+    background-color: blue;
+}
+
+.o, .tw, .th, .f{
+   height: 42%;
+   background-color: white;
+   box-sizing: border-box;
+   display: inline-block;
+}
+
+.f , .tw{
+   margin-left: 8%;
+   width: 60%;
+}
+
+.o , .th{
+    width: 32%;
+}
+
+
+.th , .f{
+   margin-top: 8%;
+}
