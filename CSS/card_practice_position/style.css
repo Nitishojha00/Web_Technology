@@ -1,0 +1,136 @@
+/* absolute use krne ka bad nhi shi 
+se kam krta margin padding use kro left right
+ position absolute krke */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* // only for complementary */
+.card{
+    margin-left:50px;
+    margin-top: 10%;
+}
+
+body {
+    font-family: 'Metropolis', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+.card{
+    height: 350px;
+    width: 380px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgb(255, 242, 242);
+    padding-left: 6px;
+    padding-top: 6px;
+    border-radius: 8px;
+}
+
+.image{
+    position: relative;
+}
+
+
+.i{
+    height: 245px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.a {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.a11 {
+    font-weight: bold;
+   font-size: 17px;
+   display: inline-block;
+   margin-right: 70px;
+}
+
+.a12{
+    font-size: 14px;
+    font-weight: bolder;
+    display: inline-block;
+    width: 50px;
+    height: 18px;
+    padding: 2px;
+    padding-left: 8px;
+    background-color: green;
+    border-radius: 20px;
+    color: white;
+}
+
+.a12 > svg{
+    margin-left: 3px;
+}
+
+.b{
+  position: relative;
+  margin-top:5px;
+  padding: 2px;
+}
+
+.b1{
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 90px;
+}
+
+.b2{
+   font-size: 14px;
+   display: inline-block;
+}
+
+.c{
+    padding: 2px;
+    font-size: 14px;
+    margin-top:5px;
+}
+
+.c1{
+   display: inline-block;
+   margin-right: 130px;
+}
+
+.c2{
+    font-weight: 600;
+    display: inline-block;
+}
+
+.discount{
+    position:  absolute;
+    height: 28px;
+    width: 165px;
+    background-color: blue;
+    top: 200px;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+.img2
+{
+    width: 18px;
+    height: 18px;
+}
+
+.d1{
+    margin:5px 14px 5px 15px;
+     display: inline-block;
+     font-weight: bolder;
+     box-sizing: border-box;
+}
+
+.d2{
+    display: inline-block;
+    font-weight: bolder;
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+    top: -3px;
+}
