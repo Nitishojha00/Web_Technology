@@ -13,7 +13,7 @@
 
 // forEach
 // arr = [1,2,3,4,5];
-// arr.forEach((item, index) => {
+// arr.forEach((item, index,arr) => {
 //   // do something with item
 // });
 
