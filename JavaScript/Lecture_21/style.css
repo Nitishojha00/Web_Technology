@@ -1,0 +1,44 @@
+*{
+ padding: 0;
+ margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(4, 27, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 75%;
+    height: 60%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.quotes{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.quotes{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+#box{
+    width: auto;
+    box-sizing: border-box;
+    height: 50%;
+    margin-top: 50px;;
+    background-color: yellow;
+}
