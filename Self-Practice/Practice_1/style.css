@@ -1,0 +1,111 @@
+/* **************************************Nav******************************* */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hicons ul{
+    display: flex;
+    margin-right: 5vw;
+    gap: 3vw;
+    list-style: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 3.5px;
+}
+
+.htag{
+    margin-left: 15vw;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+
+/* ************************************main section 1************************************ */
+
+#section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    box-sizing: border-box;
+}
+
+
+.mIntro{
+   padding: 4vw;
+   height: 40vh;
+   width: 35vw;
+   box-sizing: border-box;
+}
+
+.mPhoto{
+  margin-top: 20vh;
+  box-sizing: border-box;
+}
+
+.mPhoto img{
+   margin-top: 6vh;
+   width: auto;
+   height: 45vh;
+   border-radius: 50px;
+}
+
+
+
+.mIntro .p1{
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.mIntro .p2{
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: rgb(72, 68, 68);
+}
+
+.mIntro .p3{
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: rgb(72, 68, 68);
+}
+
+/* ************************************main section 2************************************ */
+
+#About_me{
+   margin-top: 20vh;
+   
+}
+
+.Abox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#About_me h1{
+   text-align: center;
+   font-size: 3rem;
+}
+
+.Abox1 img{
+    margin-top: 6vh;
+   width: auto;
+   height: 45vh;
+   border-radius: 50px; 
+}
+
+.Abox2{
+    font-size: large;
+    padding: 3em;
+    text-align: center;
+    color: rgb(72, 68, 68);
+}
