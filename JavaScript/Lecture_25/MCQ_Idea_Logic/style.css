@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+h1{
+    text-align: center;
+    padding: 20px;
+    color: blue;
+}
+
+button{
+    text-align: center;
+    color: blue;
+    font-size: 1.5em;
+    width: 75vw;
+}
+
+form{
+    margin: 0 auto;  /* ye center krdeta*/
+    background-color: aliceblue;
+    width: 80vw;
+    padding: 50px;
+}
+
+#question{
+    padding: 20px;
+}
+
+input{
+   margin: 0.5em;
+}
