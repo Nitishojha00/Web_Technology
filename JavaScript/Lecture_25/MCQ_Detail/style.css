@@ -26,10 +26,18 @@ form{
     padding: 50px;
 }
 
-#question{
+.question{
     padding: 20px;
 }
 
 input{
    margin: 0.5em;
+}
+
+#result{
+   text-align: center;
+   padding: 10px;
+   font-size: large;
+   font-weight: bolder;
+   margin-top: 50px;
 }
