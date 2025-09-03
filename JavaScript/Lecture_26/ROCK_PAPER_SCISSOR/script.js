@@ -6,22 +6,21 @@ btn.addEventListener("click",(e)=>{
          const opt = document.createElement('div');
          opt.id = "options";
 
-         // i can create it using loop but now simple
-         let img1 = document.createElement('img');
-         img1.id = "1";
-         img1.src = "../rock.webp";
-         img1.alt = "Rock";
-         opt.append(img1);
-         let img2 = document.createElement('img');
-         img2.id = "2";
-         img2.src = "../Paper.webp";
-         img2.alt = "Paper";
-         opt.append(img2);
-         let img3 = document.createElement('img');
-         img3.id = "3";
-         img3.src = "../scissor.png";
-         img3.alt = "Scissor";
-         opt.append(img3);
+        
+        // Okay optimize krrha single loop use krke 
+        const choices = [
+        { id: 1, alt: "Rock", src: "../rock.webp" },
+        { id: 2, alt: "Paper", src: "../Paper.webp" },
+        { id: 3, alt: "Scissor", src: "../scissor.png" }
+     ];
+        for(let i=0;i<3;i++)
+        {
+            let img1 = document.createElement('img');
+            img1.id = choices[i].id;
+            img1.src = choices[i].src;
+            img1.alt = choices[i].alt;
+            opt.append(img1);
+        }
 
          const h2 = document.createElement('h2');
          h2.innerText = "Select Any One Above ";
@@ -34,11 +33,7 @@ btn.addEventListener("click",(e)=>{
          resultdiv.id = "result";
          
          btn.style.display = "none";
-         div.append(h1);
-         div.append(opt);
-         div.append(h2);
-         div.append(btn2);
-         div.append(resultdiv);
+         div.append(h1, opt, h2, btn2, resultdiv); // can append at once
          
         let tar;
         opt.addEventListener("click",(e)=>{
