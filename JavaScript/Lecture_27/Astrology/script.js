@@ -101,24 +101,29 @@ let zodiacL         = document.getElementById("zodiacL");
 let zodiacNam       = document.getElementById("zodiacNam");
 let zodiacCar       = document.getElementById("zodiacCar");
 let zodiacLuckyNum  = document.getElementById("zodiacLuckyNum");
+let zodiacCol  = document.getElementById("zodiacCol");
 let res = document.querySelector('.result');
 // okay icon ko select krliya ab icon to month ke hisab se hi dunga
 
 btn.addEventListener('click',(e)=>{
 
-     let firstName = document.getElementById('fname').value.length;
-     let lName = document.getElementById('lname').value.length;
+     let firstNameLength = document.getElementById('fname').value.length;
+     let lNameLength = document.getElementById('lname').value.length;
      let dob = new Date(document.getElementById('dob').value);
      let month = dob.getMonth();
      let day = dob.getDate();
      let year = dob.getFullYear();
-     zodiacNam.textContent = zodiacNames[month];
-     zodiacSym.textContent = zodiacSymbols[months];
-     zodiacMod.textContent = zodiacModalities[month];
-     zodiacEle.textContent = zodiacElements[month];
-     zodiacTrait.textContent = zodiacTraits[month];
-     zodiacL.textContent = zodiacLove[month];
-     zodiacCar.textContent = zodiacCareers[month];
-     zodiacLuckyNum.textContent = zodiacLuckyNumbers[month];
-     res.style.removeProperty("display");
+     // we dont use random generator because then no one believe 
+     // it will give different data for every one 
+     zodiacNam.append(zodiacNames[month]);
+     zodiacSym.append(zodiacSymbols[(firstNameLength*lNameLength)%12]);
+     zodiacMod.append(zodiacModalities[month]);
+     zodiacEle.append(zodiacElements[month]);
+     zodiacTrait.append(zodiacTraits[(99*firstNameLength)%12]);
+     zodiacL.append(zodiacLove[month]);
+     zodiacCar.append(zodiacCareers[(101*lNameLength)%12]);
+     zodiacLuckyNum.append(zodiacLuckyNumbers[month]);
+     zodiacCol.append(zodiacColors[month]);
+     res.style.display = "flex";
+     res.style.flexDirection = "column";
 });
