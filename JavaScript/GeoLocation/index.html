@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button id="btn">Get Location</button>
+  <p id="out"></p>
+
+  <script>
+    function getPosition() {
+      return new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(resolve, reject);
+      });
+    }
+
+    document.getElementById("btn").addEventListener("click", async () => {
+      try {
+        const pos = await getPosition();
+        document.getElementById("out").innerHTML =
+          `Lat: ${pos.coords.latitude} <br> Lon: ${pos.coords.longitude}`;
+      } catch (err) {
+        document.getElementById("out").textContent = "Error getting location.";
+      }
+    });
+  </script>
+</body>
+</html>
