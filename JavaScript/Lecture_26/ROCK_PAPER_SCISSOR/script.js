@@ -9,9 +9,9 @@ btn.addEventListener("click",(e)=>{
         
         // Okay optimize krrha single loop use krke 
         const choices = [
-        { id: 1, alt: "Rock", src: "../rock.webp" },
-        { id: 2, alt: "Paper", src: "../Paper.webp" },
-        { id: 3, alt: "Scissor", src: "../scissor.png" }
+        { id: 1, alt: "Rock", src: "rock.webp" },
+        { id: 2, alt: "Paper", src: "Paper.webp" },
+        { id: 3, alt: "Scissor", src: "scissor.png" }
      ];
         for(let i=0;i<3;i++)
         {
