@@ -115,15 +115,15 @@ btn.addEventListener('click',(e)=>{
      let year = dob.getFullYear();
      // we dont use random generator because then no one believe 
      // it will give different data for every one 
-     zodiacNam.append(zodiacNames[month]);
-     zodiacSym.append(zodiacSymbols[(firstNameLength*lNameLength)%12]);
-     zodiacMod.append(zodiacModalities[month]);
-     zodiacEle.append(zodiacElements[month]);
-     zodiacTrait.append(zodiacTraits[(99*firstNameLength)%12]);
-     zodiacL.append(zodiacLove[month]);
-     zodiacCar.append(zodiacCareers[(101*lNameLength)%12]);
-     zodiacLuckyNum.append(zodiacLuckyNumbers[month]);
-     zodiacCol.append(zodiacColors[month]);
+     zodiacNam.textContent = zodiacNames[month];
+     zodiacSym.innerText = zodiacSymbols[(firstNameLength*lNameLength)%12];
+     zodiacMod.innerText = zodiacModalities[month];
+     zodiacEle.innerText = zodiacElements[month];
+     zodiacTrait.innerText = zodiacTraits[(99*firstNameLength)%12];
+     zodiacL.innerText = zodiacLove[month];
+     zodiacCar.innerText = zodiacCareers[(101*lNameLength)%12];
+     zodiacLuckyNum.innerText = zodiacLuckyNumbers[month];
+     zodiacCol.innerText = zodiacColors[month];
      res.style.display = "flex";
      res.style.flexDirection = "column";
 });

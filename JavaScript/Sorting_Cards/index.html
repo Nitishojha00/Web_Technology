@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Reusable Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
 
-  <!-- Metropolis Font -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/typehaus/metropolis@latest/metropolis.css">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Metropolis', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background-color: #f5f5f5;
-      padding: 20px;
-    }
-
-    .c-card-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
+        nav{
+            display: flex;
+        }
+        button{
+            font-size: larger;
+            font-weight: bolder;
+            border-radius: 8px;
+        }
+        
+       
+     .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5em;
+      margin-top: 3em;
     }
 
     .c-card {
-      max-width: 25vw;
-      width: 100%;
       background-color: #fff0f0;
       border-radius: 10px;
       overflow: hidden;
@@ -42,12 +35,6 @@
 
     .c-card:hover {
       background-color: #ffffff;
-    }
-
-    @media (max-width: 768px) {
-      .c-card {
-        max-width: 90vw;
-      }
     }
 
     .c-image {
@@ -130,43 +117,23 @@
     .c-distance {
       font-weight: bold;
     }
-  </style>
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <button id="Filter">FILTER</button>
+            <button id="Time" >Open Now</button>
+            <button id="Offers">Offers</button>
+            <button id="Rating">Rating: 4.5+</button>
+            <button id="Pet">Pet Friendly</button>
+            <button id="Outdoor">Outdoor Seating</button>
+            <button id="Alcohol">Serves Alcohol</button>
+        </nav>
+    </header>
+    <div class="cards">
 
-  <div class="c-card-container">
-
-    <div class="c-card">
-      <div class="c-image">
-        <img src="img1.webp" alt="Restaurant" class="c-img-main" />
-        <div class="c-discount">
-          <img src="img2.webp" class="c-img-discount" alt="offer"/>
-          <span>Flat 15% OFF</span>
-        </div>
-      </div>
-
-      <div class="c-header">
-        <div class="c-title">Somewhere Restro & Bar</div>
-        <div class="c-rating">
-          <span>4.2</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="14" height="14" viewBox="0 0 24 24">
-            <path d="M12 .587l3.668 7.431L24 9.587l-6 5.847 1.417 8.252L12 18.896l-7.417 4.79L6 15.434 0 9.587l8.332-1.569z"/>
-          </svg>
-        </div>
-      </div>
-
-      <div class="c-tags-section">
-        <div class="c-tags">North Indian, Asian, Europ...</div>
-        <div class="c-price">&#8377; 2,000 for two</div>
-      </div>
-
-      <div class="c-location-section">
-        <div class="c-location">Connaught Place, Delhi</div>
-        <div class="c-distance">1.4 km</div>
-      </div>
     </div>
-
-  </div>
-
+    <script type="module" src="script.js"></script>
 </body>
 </html>
